@@ -1,0 +1,34 @@
+h1{
+    color: #C69D9D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    border: 2px;
+}
+            *{
+                text-decoration: none;  
+            }
+            .navbar{
+                background: #C69D9D; font-family:Arial, Helvetica, sans-serif;padding-right: 15px;padding-left: 15px;
+            }
+            .navdiv{
+                display: flex;align-items: center;justify-content: space-between;
+            }
+            .header{
+                font-size: 45px; font-weight: 600;color:white;
+            }
+            li{
+                list-style: none;display: inline-block;
+            }
+            li a{
+                color: white;font-size: 18px; font-weight: bold; margin-right: 25px;
+            }
+            p{
+                font-family: monospace; font-size: large;
+            }
+            img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 720px;
+}
+
