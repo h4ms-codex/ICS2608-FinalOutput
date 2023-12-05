@@ -5,11 +5,39 @@
             background-color: #F2E2D4;
         }
 
-        h2 {
+        h1 {
             /* About us */
             color: rgba(0, 0, 0, 0.74);
-
         }
+
+        h2 {
+            /* Rectangle 10 */
+            display: flex;
+            width: 720px;
+            height: 300px;
+            left: 102px;
+            top: 304px;
+            justify-content: space-between;
+            align-items: center;
+            background: #C69D9D;
+            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+        }
+
+        h3 {
+            /* IMG_9104 1 */
+        display: flex;    
+        position: absolute;
+        width: 730px;
+        height: 300px;
+        left: 273px;
+        top: 304px;
+        bottom: 900px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 50px;
+        }
+
         nav {
             background-color: #C69D9D;
             overflow: hidden;
