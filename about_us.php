@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="about_us.css" />
+    <!-- <link rel="stylesheet" href="about_us.css" /> -->
   </head>
 
   <body style="background-color: C69D9D">
