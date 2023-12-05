@@ -22,7 +22,9 @@
 
     <div>
         <center>
-            <h2>About Us</h2>
+            <h1>About Us</h1>
+            <h2></h2>
+            <h3><img src="images/IMG_9104 1.jpg" alt="liempo" class="liempo"></h3>
         </center>
     </div>
 
