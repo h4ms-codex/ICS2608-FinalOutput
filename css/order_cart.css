@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+
+.ordercart-container {
+    border: 1px solid brown;
+    background-color:burlywood;
+    border-radius: 25px;
+    margin: 5%;
+}
+
+.container {
+
+    border: 1px solid black;
+
+}
+
