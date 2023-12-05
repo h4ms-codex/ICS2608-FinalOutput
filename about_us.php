@@ -19,7 +19,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px; /* Adjust padding as needed */
+            padding: 10px 20px;
         }
 
         nav a {
@@ -34,18 +34,18 @@
         }
 
         .logo {
-            width: 65px; /* Adjust the width as needed */
+            width: 65px; 
             height: 50px;
         }
 
         .menu-about-links {
             display: flex;
-            gap: 10px; /* Adjust the gap between "Menu" and "About Us" */
+            gap: 10px; /* adjust the gap between "menu" and "abouot us" */
         }
 
         .right-links {
             display: flex;
-            gap: 10px; /* Adjust the gap between "Cart" and "Sign In" */
+            gap: 10px; /* addjust the gap between "cart" and "sign in" */
         }
     </style>
 </head>
