@@ -4,50 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F2E2D4;
-        }
-
-        nav {
-            background-color: #C69D9D;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 16px;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: #C69D9D;
-        }
-
-        .logo {
-            width: 65px; 
-            height: 50px;
-        }
-
-        .menu-about-links {
-            display: flex;
-            gap: 10px; /* adjust the gap between "menu" and "abouot us" */
-        }
-
-        .right-links {
-            display: flex;
-            gap: 10px; /* addjust the gap between "cart" and "sign in" */
-        }
-    </style>
+    <link rel="stylesheet" href="css/about_us.css">
 </head>
 <body>
 
