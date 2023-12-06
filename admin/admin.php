@@ -11,29 +11,29 @@
 <body>
     <?php include '../includes/header-admin.php'; ?>
 
-    <form class="container mt-5 p-3 w-50" method="post">
+    <form class="container mt-5 p-3 w-50" action="validate.php" method="post">
         <div class="form-group row">
-            <div class="col-12 text-signup text-center">
-                Sign in
-            </div>
+            <div class="col-12 text-signup text-center">Login</div>
         </div>
+
         <div class="form-group row d-flex justify-content-center">
             <div class="col-sm-12 col-lg-8 custom-form">
-                <input class="form-control" type="text" id="email" name="email" placeholder="Email address"required>
+                <input class="form-control" type="text" id="username" name="username" placeholder="Username" required>
             </div>
         </div>
+
         <div class="form-group row d-flex justify-content-center">
             <div class="col-sm-12 col-lg-8 custom-form">
                 <input class="form-control" type="text" id="password" name="password" placeholder="Password" required>
             </div>
         </div>
+
         <div class="row d-flex justify-content-center">
             <div class="col-6 mt-3">
-                <button class="form-control custom-btn btn" type="submit" name="submit">Submit</button>
+                <button class="form-control custom-btn btn" type="submit" name="login">Sign In</button>
             </div>
         </div>
     </form>
-
 </body>
 
 </html>
