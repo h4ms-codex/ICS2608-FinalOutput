@@ -3,30 +3,91 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F2E2D4;
+
 }
 
-h1 {
-    font-weight: bold;
+.custom-text-box {
+    background-color: rgba(242, 226, 212, 0.7); 
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; 
+    width: 100%;
+    border: none; 
 }
 
-.checkout-container{
-    margin-top: 30px;
+
+.delivery-container{
     border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px auto;
+    margin: 20px;
+    padding: 15px;
     border-radius: 10px;
+    overflow: hidden;
     background-color: #C69D9D;
- 
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
+
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    flex: 1;
+    border-radius: 10px;
 }
-.detail-container,
-.payment-container {
+
+.ordersummary-container{
     border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px auto;
+    margin: 20px;
+    padding: 15px;
     border-radius: 10px;
+    overflow: hidden;
     background-color: #C69D9D;
- 
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
+    width: 700px;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    flex: 1;
+    border-radius: 10px;
 }
+.detail-container{
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #C69D9D;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
+
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    flex: 1;
+    border-radius: 10px;
+}
+.payment-container{
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #C69D9D;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
+    text-align:left;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    flex: 1;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .payment-container,
+    .detail-container,
+    .delivery-container,
+    .order-summary,
+    .paymentmethod,
+    .ordersummary {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+}
+
 .place-order-btn {
     background-color: #A84646;
     color: #ffffff;
@@ -35,11 +96,9 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.place-order-btn:hover {
-    background-color: #822828;
-}
-.back-to-cart {
-    margin-top: 20px;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    flex: 1;
+    border-radius: 10px;
 }
