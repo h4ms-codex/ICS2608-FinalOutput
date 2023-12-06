@@ -1,76 +1,27 @@
-        body {
-            font-family: 'Kreon';
-            margin: 0;
-            padding: 0;
-            background-color: #F2E2D4;
-        }
+h1{
+    text-align: center;
+}
 
-        h1 {
-            /* About us */
-            color: rgba(0, 0, 0, 0.74);
-        }
+.aboutus-container {
+    max-width: 800px;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #C69D9D;
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+}
 
-        h2 {
-            /* Rectangle 10 */
-            display: flex;
-            width: 720px;
-            height: 300px;
-            left: 102px;
-            top: 304px;
-            justify-content: space-between;
-            align-items: center;
-            background: #C69D9D;
-            box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.3);
-            border-radius: 20px;
-        }
+.aboutus-container img {
+    max-width: 50%; /* Set the maximum width for the image */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
 
-        h3 {
-            /* IMG_9104 1 */
-        display: flex;    
-        position: absolute;
-        width: 730px;
-        height: 300px;
-        left: 273px;
-        top: 304px;
-        bottom: 900px;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 50px;
-        }
+.aboutus-text {
+    max-width: 45%; /* Set the maximum width for the text */
+}
 
-        nav {
-            background-color: #C69D9D;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 16px;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: #C69D9D;
-        }
-
-        .logo {
-            width: 65px; 
-            height: 50px;
-        }
-
-        .menu-about-links {
-            display: flex;
-            gap: 10px; /* adjust the gap between "menu" and "abouot us" */
-        }
-
-        .right-links {
-            display: flex;
-            gap: 10px; /* addjust the gap between "cart" and "sign in" */
-            
-        }
+/* Adjust the styles for the text within .aboutus-text as needed */
