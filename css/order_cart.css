@@ -11,9 +11,10 @@ h1 {
 .btn-add {
     width: 100%;
     border-radius: 10px;
-    background-color:darkgoldenrod;
-    color: bisque;
+    background-color: #977B7B;
+    color: #F2E2D4;
     border: 0px;
+    padding: 3px;
     font-weight: bold;
     font-family: "KoHo";
 }
@@ -21,20 +22,20 @@ h1 {
 .btn-clr {
     width: 100%;
     border-radius: 10px;
-    background-color: darkgoldenrod;
-    color: bisque;
+    background-color: #977B7B;
+    color: #F2E2D4;
     border: 0px;
+    padding: 3px;
     font-weight: bold;
     font-family: "KoHo";
 }
 
 table {
     width: 100%;
-    background-color:burlywood;
+    background-color: #C69D9D;
     border-radius: 11px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
     font-family: "KoHo";
-  
-
 }
 
 .btn-x {
@@ -44,7 +45,7 @@ table {
     margin-right: 5%;
     margin-bottom: 3%;
     font-weight: bold;
-    background-color: bisque;
+    background-color: #F2E2D4;
 }
 
 .btn-plus {
@@ -53,7 +54,7 @@ table {
     margin-right: 5%;
     margin-bottom: 3%;
     font-weight: bold;
-    background-color: bisque;
+    background-color: #F2E2D4;
 }
 
 .btn-minus {
@@ -62,7 +63,7 @@ table {
     margin-right: 5%;
     margin-bottom: 3%;
     font-weight: bold;
-    background-color: bisque;
+    background-color: #F2E2D4;
 }
 
 .item-th {
@@ -140,10 +141,11 @@ td {
 
 .btn-checkout {
     width: 40%;
-    background-color:indianred;
-    color:bisque;
+    background-color: #A84646;
+    color: #F2E2D4;
     border-radius: 20px;
     border: 0px;
+    padding: 3px;
     font-weight: bold;
     font-family: "KoHo";
 }

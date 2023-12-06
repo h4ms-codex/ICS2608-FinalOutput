@@ -17,7 +17,7 @@
     <?php include '../includes/header-user.php';
     ?>
     <br><br>
-    <h1>Your Cartimar</h1>
+    <h1>Your Cart</h1>
 <br>
 
 <div class="ordercart-container">
@@ -47,7 +47,7 @@
       <button class="btn-plus">+</button>
        3 <button class="btn-minus">-</button></td>
 
-    <td class="tbl-prc-txt">₱231</td>
+    <td class="tbl-prc-txt">₱231.00</td>
 
   </tr>
 
@@ -64,7 +64,7 @@
 <div class="row">
 <div class="col-2"></div>
 <div class="col-3 col-ttl"><p>Total</p></div>
-<div class="col-3 col-prc"><p>₱231</p></div>
+<div class="col-3 col-prc"><p>₱231.00</p></div>
 <div class="col-2"></div>
 <div class="col-2"></div>
 </div>
