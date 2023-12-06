@@ -38,7 +38,7 @@
     <td class="item-td" >
       <div class="item-info">
       <button class="btn-x">x</button>
-        <div>
+        <div class="test-item-data">
           <p>Liempo with rice</p>
         </div>
       </div>
