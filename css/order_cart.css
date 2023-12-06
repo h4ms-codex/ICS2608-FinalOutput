@@ -87,7 +87,7 @@ table {
 }
 
 .item-th {
-    width: 70%;
+    width: 50%;
     text-align: center;
     font-size:x-large;
     font-family: "Koh Santepheap";
@@ -95,14 +95,14 @@ table {
 }
 
 .qty-th {
-    width: 15%;
+    width: 25%;
     text-align: center;
     font-size: x-large;
     font-family: "Koh Santepheap";
 }
 
 .price-th {
-    width: 15%;
+    width: 25%;
     text-align: center;
     font-size: x-large;
     font-family: "Koh Santepheap";
