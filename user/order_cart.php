@@ -11,5 +11,7 @@
     <?php include '../includes/header-user.php';
     ?>
 </body>
+</html>
+</body>
 
 </html>

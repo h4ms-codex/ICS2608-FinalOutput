@@ -1,0 +1,45 @@
+body {
+    font-family: 'KoHo', sans-serif;        /* xerexa */
+    margin: 0;
+    padding: 0;
+    background-color: #F2E2D4;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.checkout-container{
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #C69D9D;
+ 
+}
+.detail-container,
+.payment-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #C69D9D;
+ 
+}
+.place-order-btn {
+    background-color: #A84646;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+    background-color: #822828;
+}
+.back-to-cart {
+    margin-top: 20px;
+}
