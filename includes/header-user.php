@@ -21,7 +21,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <a href="../user/index.php">
                     <img class="logo" src="../images/Liempohan_Logo.png" alt="">
                 </a>
-                <a href="../user/menu.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'menu.php') ? 'active' : ''; ?>">Menu</a>
+                <a href="../user/menu.php" class="ml-4 nav-link nav-font-koho <?php echo ($currentPage === 'menu.php') ? 'active' : ''; ?>">Menu</a>
                 <a href="../user/about_us.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'about_us.php') ? 'active' : ''; ?>">About us</a>
             </div>
             <a href="../user/order_cart.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'order_cart.php') ? 'active' : ''; ?>">Cart
