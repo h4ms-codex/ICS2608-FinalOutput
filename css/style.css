@@ -1,3 +1,8 @@
+/*--BODY--*/
+body {
+    background-color: #F2E2D4;
+}
+
 /*--NAVBAR--*/
 .navbar {
     background: #C69D9D;
@@ -32,4 +37,5 @@
     height: 76px;
     flex-shrink: 0;
 }
+
 
