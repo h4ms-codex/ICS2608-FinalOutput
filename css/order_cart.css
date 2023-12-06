@@ -7,10 +7,10 @@ h2 {
     color:blueviolet;
 }
 
-.container {
+.ordercart-container {
 
-    margin: 10% auto;
-    padding: 10px;
+   margin: 1%;
+    
 
 }
 
@@ -91,9 +91,7 @@ td {
     text-align: center;
 }
 
-.item-td {
-    text-align: center;
-}
+
 
 
 
@@ -116,12 +114,7 @@ td {
     font-weight: bold;
 }
 
-.ordercart-container {
-    border: 1px solid brown;
-    background-color:aqua;
-    border-radius: 25px;
-    margin: 5%;
-}
+
 
 
 
