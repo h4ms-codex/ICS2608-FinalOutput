@@ -2,17 +2,153 @@ h1 {
     text-align: center;
 }
 
-
-.ordercart-container {
-    border: 1px solid brown;
-    background-color:burlywood;
-    border-radius: 25px;
-    margin: 5%;
+h2 {
+    border: 3px;
+    color:blueviolet;
 }
 
 .container {
 
-    border: 1px solid black;
+    margin: 10% auto;
+    padding: 10px;
 
+}
+
+.btn-add {
+    width: 100%;
+    border-radius: 10px;
+    background-color:darkgoldenrod;
+    color: bisque;
+    border: 0px;
+}
+
+.btn-clr {
+    width: 100%;
+    border-radius: 10px;
+    background-color: darkgoldenrod;
+    color: bisque;
+    border: 0px;
+}
+
+table {
+    width: 100%;
+    background-color:burlywood;
+    border-radius: 11px;
+}
+
+.btn-x {
+    border-color: black;
+    border-radius: 50%;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.btn-plus {
+    border-radius: 50%;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.btn-minus {
+    border-radius: 50%;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    background-color: bisque;
+}
+
+.item-th {
+    width: 50%;
+    text-align: center;
+    font-size: large;
+}
+
+.qty-th {
+    width: 25%;
+    text-align: center;
+    font-size: large;
+}
+
+.price-th {
+    width: 25%;
+    text-align: center;
+    font-size: large;
+}
+
+.item-td {
+    text-align: start;
+    
+}
+
+td {
+    text-align: center;
+}
+
+.item-td {
+    text-align: center;
+}
+
+
+
+.item-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.item-btn {
+    text-indent: 5%;
+}
+
+.tbl-prc-txt {
+    font-weight: bold;
+}
+
+.tbl-qty-txt {
+    font-weight: bold;
+}
+
+.ordercart-container {
+    border: 1px solid brown;
+    background-color:aqua;
+    border-radius: 25px;
+    margin: 5%;
+}
+
+
+
+
+.col-ttl {
+    text-align: start;
+    font-weight: bold;
+    
+}
+
+.col-prc {
+    text-align: end;
+    font-weight: bold;
+}
+
+
+
+.btn-checkout {
+    width: 40%;
+    background-color:indianred;
+    color:bisque;
+    border-radius: 20px;
+    border: 0px;
+    
+}
+
+.col-checkout {
+    text-align: center;
 }
 
