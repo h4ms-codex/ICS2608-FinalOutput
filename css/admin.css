@@ -1,0 +1,28 @@
+/*--HEAD--*/
+.text-signup {
+    color: #977B7B;
+    text-align: center;
+    font-family: KoHo;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*--FORM--*/
+.custom-form {
+    border-radius: 30px;
+    border: 3px solid #977B7B;
+    background: #F2E2D4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/*--BUTTON--*/
+.custom-btn {
+    color: #F2E2D4;
+    font-family: KoHo;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
