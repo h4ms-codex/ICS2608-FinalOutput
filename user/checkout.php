@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="font-koho">
     <?php include '../includes/header-user.php';
     ?>
     <div class="checkout-container">
@@ -21,7 +21,7 @@
                     <h2>Delivery Information:</h2>
                     <form action="#" method="post">
                         <div class="form-group">
-                            <label for="deliveryTo">Delivery to:</label>
+                            <label class="header" for="deliveryTo">Delivery to:</label>
                             <input type="text" class="form-control" id="deliveryTo" name="deliveryTo" required>
                         </div>
 
@@ -91,7 +91,7 @@
                         <h2>Order Summary</h2>
 
                         <p>Total Items: 5</p>
-                        <p>Total Price: $50.00</p>
+                        <p>Total Price: PHP 50.00</p>
                     </div>
                     <button class="btn btn-primary back-to-cart">Back to Cart</button>
                 </div>
