@@ -1,17 +1,11 @@
 h1 {
     text-align: center;
-}
-
-h2 {
-    border: 3px;
-    color:blueviolet;
+    font-family: "Kreon";
+    font-weight: bold;
 }
 
 .ordercart-container {
-
    margin: 1%;
-    
-
 }
 
 .btn-add {
@@ -20,6 +14,8 @@ h2 {
     background-color:darkgoldenrod;
     color: bisque;
     border: 0px;
+    font-weight: bold;
+    font-family: "KoHo";
 }
 
 .btn-clr {
@@ -28,12 +24,17 @@ h2 {
     background-color: darkgoldenrod;
     color: bisque;
     border: 0px;
+    font-weight: bold;
+    font-family: "KoHo";
 }
 
 table {
     width: 100%;
     background-color:burlywood;
     border-radius: 11px;
+    font-family: "KoHo";
+  
+
 }
 
 .btn-x {
@@ -67,19 +68,22 @@ table {
 .item-th {
     width: 50%;
     text-align: center;
-    font-size: large;
+    font-size:x-large;
+    font-family: "Koh Santepheap";
 }
 
 .qty-th {
     width: 25%;
     text-align: center;
-    font-size: large;
+    font-size: x-large;
+    font-family: "Koh Santepheap";
 }
 
 .price-th {
     width: 25%;
     text-align: center;
-    font-size: large;
+    font-size: x-large;
+    font-family: "Koh Santepheap";
 }
 
 .item-td {
@@ -121,13 +125,15 @@ td {
 
 .col-ttl {
     text-align: start;
+    font-size: large;
     font-weight: bold;
-    
+    font-family: "Koh Santepheap";    
 }
 
 .col-prc {
     text-align: end;
     font-weight: bold;
+    font-family: "KoHo";
 }
 
 
@@ -138,7 +144,8 @@ td {
     color:bisque;
     border-radius: 20px;
     border: 0px;
-    
+    font-weight: bold;
+    font-family: "KoHo";
 }
 
 .col-checkout {

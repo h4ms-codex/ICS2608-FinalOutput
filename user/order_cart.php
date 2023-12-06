@@ -7,6 +7,9 @@
     <title>Order Cart</title>
 
     <link href="/GitHub/ICS2608-FinalOutput/css/order_cart.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kreon&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KohSantepheap&display=swap">
 
 </head>
 
@@ -14,7 +17,7 @@
     <?php include '../includes/header-user.php';
     ?>
     <br><br>
-    <h1>Your Cart</h1>
+    <h1>Your Cartimar</h1>
 <br>
 
 <div class="ordercart-container">
