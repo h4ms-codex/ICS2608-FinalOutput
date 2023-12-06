@@ -31,6 +31,10 @@ body {
     line-height: normal;
 }
 
+.font-koho {
+    font-family: KoHo;
+}
+
 /*--IMAGES--*/
 .logo {
     width: 110px;
