@@ -24,12 +24,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (($user['username'] == $username) &&
             ($user['password'] == $password)
         ) {
-            header("location: orders.php");
+            header("location: order_details.php");
         } else {
             echo "<script language='javascript'>";
             echo "alert('WRONG INFORMATION')";
             echo "</script>";
-            header("location: admin.php");
+            die();
         }
     }
 }

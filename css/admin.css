@@ -29,6 +29,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .custom-btn:hover {
@@ -36,3 +37,4 @@
     color: #fff; /* Set your desired hover text color */
 }
 
+/*--TABLE--*/
