@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +14,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kreon&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KohSantepheap&display=swap">
+
+    <script>
+      function redirectcheckout() {
+        window.open("checkout.php", "_self")
+      }
+
+      function redirectmenu() {
+        window.open("menu.php", "_self")
+      }
+    </script>
 
 </head>
 
@@ -54,7 +68,7 @@
 </table>
 </div>
 <div class="col-2">
-<button class="btn-add">Add Order</button>
+<button onclick="redirectmenu()" class="btn-add">Add Order</button>
 <br><br>
 <button class="btn-clr">Clear Cart</button>
 </div>
@@ -71,7 +85,7 @@
 
 <div class="row">
   <div class="col-2"></div>
-  <div class="col-6 col-checkout"><hr><button class="btn-checkout">PROCEED TO CHECKOUT</button></div>
+  <div class="col-6 col-checkout"><hr><button onclick="redirectcheckout()" class="btn-checkout">PROCEED TO CHECKOUT</button></div>
   <div class="col-2"></div>
   <div class="col-2"></div>
 </div>
