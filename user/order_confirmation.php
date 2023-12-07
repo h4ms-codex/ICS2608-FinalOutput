@@ -9,12 +9,12 @@
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo&display=swap">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/order_confirmation.css">
+        <link rel="stylesheet" href="../css/order_confirmation.css">
 
 
     </head>
 
-    <body>
+    <body class="font-koho">
         <?php include '../includes/header-user.php';
         ?>
 

@@ -11,56 +11,83 @@
 
 </head>
 
-<body>
+<body class="font-koho">
     <?php include '../includes/header-user.php';
     ?>
-    <div class="checkout-container">
-        <div class="row">
+   
+        <div class="column">
             <div class="col-md-6">
-                <div class="delivery-container">
+   
+                    <div class = "delivery-container">
                     <h2>Delivery Information:</h2>
                     <form action="#" method="post">
                         <div class="form-group">
-                            <label for="deliveryTo">Delivery to:</label>
-                            <input type="text" class="form-control" id="deliveryTo" name="deliveryTo" required>
+                            <label class="header" for="deliveryTo">Delivery to:</label>
+                            <input type="text" class="custom-text-box" id="deliveryTo" name="deliveryTo" required>
                         </div>
 
                         <div class="form-group">
                             <label for="address">Address details:</label>
-                            <textarea class="form-control" id="address" name="address" required></textarea>
+                            <textarea class="custom-text-box" id="address" name="address" required></textarea>
                         </div>
 
                         <div class="form-group">
                             <label for="deliveryNote">Note to delivery man:</label>
-                            <textarea class="form-control" id="deliveryNote" name="deliveryNote"></textarea>
+                            <textarea class="custom-text-box" id="deliveryNote" name="deliveryNote"></textarea>
                         </div>
+                </div>
                     </form>
                 </div>
-                <div class="detail-container">
+</div>                                                                                                                   
+
+          
+                    <div class="column">
+                        <div class="col-md-6">
+         
+                            <div class="detail-container">
                     <h2>Add your details:</h2>
                     <form action="#" method="post">
                         <div class="form-group">
                             <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            <input type="text" class="custom-text-box" id="firstName" name="firstName" required>
                         </div>
 
                         <div class="form-group">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            <input type="text" class="custom-text-box" id="lastName" name="lastName" required>
                         </div>
 
                         <div class="form-group">
                             <label for="mobileNumber">Mobile Number:</label>
-                            <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" required>
+                            <input type="tel" class="custom-text-box" id="mobileNumber" name="mobileNumber" required>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="custom-text-box" id="email" name="email" required>
                         </div>
                 </div>
-                </form>
-                <div class="payment-container">
+                </form>                                                                                                
+ 
+                    <div class="row">
+                        <div class="col-md-6">
+             
+                            <div class="ordersummary-container">
+                        <h2>Order Summary</h2>
+
+                        <p>Total Items: 5</p>
+                        <p>Total Price: PHP 50.00</p>
+                        <button class="btn btn-primary back-to-cart">Back to Cart</button>
+                    </div>
+                 </div>                
+                </div>
+            </div>
+        </div>                                                                                                
+
+                    <div class="row">
+                        <div class="col-md-6">
+                     
+                                <div class="payment-container">
                     <h2>Payment Method:</h2>
                     <form action="#" method="post">
                         <div class="form-check">
@@ -85,18 +112,11 @@
                         </div>
                     </form>
                     <button class="place-order-btn">Place Order</button>
-                </div>
-                <div class="col-md-6">
-                    <div class="order-summary">
-                        <h2>Order Summary</h2>
-
-                        <p>Total Items: 5</p>
-                        <p>Total Price: $50.00</p>
-                    </div>
-                    <button class="btn btn-primary back-to-cart">Back to Cart</button>
-                </div>
+                </div>                                                                      
             </div>
-        </div>
+            </div>
+            </div>
+            </div>                                                                                                   
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
