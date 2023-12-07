@@ -15,77 +15,48 @@ body {
     border: none; 
 }
 
-
 .delivery-container{
     border: 1px solid #ddd;
-    margin: 20px;
-    padding: 15px;
     border-radius: 10px;
+    padding:10px;
     overflow: hidden;
     background-color: #C69D9D;
+    margin:5%;
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
-
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;
-    flex: 1;
-    border-radius: 10px;
 }
-
 .ordersummary-container{
     border: 1px solid #ddd;
-    margin: 20px;
-    padding: 15px;
     border-radius: 10px;
+    padding:10px;
     overflow: hidden;
     background-color: #C69D9D;
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
-    width: 700px;
+    margin:65%;
+    padding:50%;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    justify-content: center;
     display: grid;
     position: relative;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr;                          
     flex: 1;
-    border-radius: 10px;
 }
-.detail-container{
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #C69D9D;
-    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
 
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;
-    flex: 1;
-    border-radius: 10px;
-}
+
 .payment-container{
     border: 1px solid #ddd;
-    padding: 15px;
     border-radius: 10px;
+    padding:10px;
     overflow: hidden;
     background-color: #C69D9D;
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
-    text-align:left;
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;
-    flex: 1;
-    border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-    .payment-container,
-    .detail-container,
-    .delivery-container,
-    .order-summary,
-    .paymentmethod,
-    .ordersummary {
-        padding-left: 10px;
-        padding-right: 20px;
-    }
+    margin-left:10%;
+    margin-top: 65%;
+    padding:30%;
+    width: 350px;
 }
 
 .place-order-btn {

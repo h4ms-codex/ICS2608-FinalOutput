@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Order Confirmation</title>
 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo&display=swap">
@@ -13,28 +13,28 @@
 
 
     </head>
-
+    
     <body class="font-koho">
         <?php include '../includes/header-user.php';
         ?>
-
         <section>
-            <h1 class="text-center">Thank you for your Order!</h1>
 
-            <div class="order-container">
-                <h3>Order Information</h3>
-                <p><strong>Order Number:</strong> #123456</p>
-                <p><strong>Order Date:</strong> December 5, 2023</p>
-                <p><strong>Recipient Name:</strong> Randolph Alvarado</p>
-                <p><strong>Payment Method:</strong> Credit Card</p>
-                <p><strong>Delivery Address:</strong> 164 Meycauayan, Bulacan</p>
-            </div>
+        <div class="order-container">
+            <h3>Order Information</h3>
+            <p><strong>Order Number:</strong> <?php echo $orderID; ?></p>
+            <p><strong>Order Date:</strong> <?php echo date("F j, Y"); ?></p>
+            <p><strong>Recipient Name:</strong> <?php echo $recipientname; ?></p>
+            <p><strong>Payment Method:</strong> <?php echo $paymentmethod; ?></p>
+            <p><strong>Delivery Address:</strong> <?php echo $address; ?></p>
+        </div>
 
-            <div class="order-summary">
-                <h3>Order Summary</h3>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p><strong>Cart:</strong> <?php echo $orderitem; ?></p>
+            <p><strong>Quantity:</strong> <?php echo $quantity; ?></p>
+        </div>
+    </section>
 
-            </div>
-        </section>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

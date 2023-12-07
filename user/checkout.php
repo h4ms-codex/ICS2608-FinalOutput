@@ -14,38 +14,40 @@
 <body class="font-koho">
     <?php include '../includes/header-user.php';
     ?>
-   
-        <div class="column">
-            <div class="col-md-6">
-   
-                    <div class = "delivery-container">
-                    <h2>Delivery Information:</h2>
-                    <form action="#" method="post">
-                        <div class="form-group">
-                            <label class="header" for="deliveryTo">Delivery to:</label>
-                            <input type="text" class="custom-text-box" id="deliveryTo" name="deliveryTo" required>
-                        </div>
+    <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Process the form data and perform the create operation
+    $firstName = $_POST["firstName"];
+    $lastName = $_POST["lastName"];
+    $mobileNumber = $_POST["mobileNumber"];
+    $address = $_POST["address"];
+    $email = $_POST["email"];
+    $deliveryNote = $_POST["deliveryNote"];
+    $paymentMethod = $_POST["paymentMethod"];
 
-                        <div class="form-group">
-                            <label for="address">Address details:</label>
-                            <textarea class="custom-text-box" id="address" name="address" required></textarea>
-                        </div>
 
-                        <div class="form-group">
-                            <label for="deliveryNote">Note to delivery man:</label>
-                            <textarea class="custom-text-box" id="deliveryNote" name="deliveryNote"></textarea>
-                        </div>
-                </div>
-                    </form>
-                </div>
-</div>                                                                                                                   
 
-          
-                    <div class="column">
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
+    $sql = "INSERT INTO orders (first_name, last_name, mobile_number, address, email, delivery_note, payment_method)
+            VALUES ('$firstName', '$lastName', '$mobileNumber', '$address', '$email', '$deliveryNote', '$paymentMethod')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Order created successfully";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+
+    $conn->close();
+}
+?>
+
+                    <div class="row">
                         <div class="col-md-6">
-         
-                            <div class="detail-container">
-                    <h2>Add your details:</h2>
+                            <div class="delivery-container">
+                    <h2>Delivery Information:</h2>
                     <form action="#" method="post">
                         <div class="form-group">
                             <label for="firstName">First Name:</label>
@@ -63,29 +65,24 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="address">Address details:</label>
+                            <textarea class="custom-text-box" id="address" name="address" required></textarea>
+                        </div>
+
+                        <div class="form-group">
                             <label for="email">Email:</label>
                             <input type="email" class="custom-text-box" id="email" name="email" required>
                         </div>
-                </div>
-                </form>                                                                                                
- 
-                    <div class="row">
-                        <div class="col-md-6">
-             
-                            <div class="ordersummary-container">
-                        <h2>Order Summary</h2>
 
-                        <p>Total Items: 5</p>
-                        <p>Total Price: PHP 50.00</p>
-                        <button class="btn btn-primary back-to-cart">Back to Cart</button>
-                    </div>
-                 </div>                
+                        <div class="form-group">
+                            <label for="deliveryNote">Note to delivery man:</label>
+                            <textarea class="custom-text-box" id="deliveryNote" name="deliveryNote"></textarea>
+                        </div>
                 </div>
-            </div>
-        </div>                                                                                                
-
-                    <div class="row">
-                        <div class="col-md-6">
+</div>
+                </form>   
+                            <div class="row">
+                        <div class="col-md-3">
                      
                                 <div class="payment-container">
                     <h2>Payment Method:</h2>
@@ -111,12 +108,29 @@
                             </label>
                         </div>
                     </form>
-                    <button class="place-order-btn">Place Order</button>
+                    <button class="place-order-btn"><a href="order_confirmation.php">Place Order</a></button>
                 </div>                                                                      
             </div>
             </div>
             </div>
-            </div>                                                                                                   
+            </div>                                                                                                
+ 
+                    <div class="row">
+                        <div class="col-md-2">
+             
+                            <div class="ordersummary-container">
+                        <h2>Order Summary</h2>
+
+                        <p>Total Items: 5</p>
+                        <p>Total Price: PHP 50.00</p>
+                        <button class="btn btn-primary back-to-cart">Back to Cart/button>
+                    </div>
+                 </div>                
+                </div>
+            </div>
+        </div>                                                                                                
+
+                                                                                                
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
