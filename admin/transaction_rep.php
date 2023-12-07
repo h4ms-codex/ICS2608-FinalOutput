@@ -77,8 +77,6 @@ $stmt = $conn->query($query);
                     <td>' . $customer_name . '</td>
                     <td>' . $address . '</td>
                     <td>
-                        <button class="btn-primary"><a class="text-light" href="update.php?updateID=' . $product_ID . '">Update</a></button>
-                        <button class="btn-primary"><a class="text-light" href="delete.php?deleteID=' . $product_ID . '">Delete</a></button>
                 </td>
                 </tr>';
                         }
