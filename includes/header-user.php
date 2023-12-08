@@ -15,7 +15,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar main-navbar navbar-expand-lg">
         <div class="container">
             <div class="d-flex align-items-center">
                 <a href="../user/index.php">

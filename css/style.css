@@ -4,9 +4,8 @@ body {
 }
 
 /*--NAVBAR--*/
-.navbar {
+.main-navbar {
     background: #C69D9D;
-    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
 }
 
 .nav-link {
