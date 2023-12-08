@@ -24,12 +24,7 @@ h1{
     max-width: 45%; /* Set the maximum width for the text */
 }
 
-.resto {
-    width: 200px;
-    height: 200px;
-    border-radius: 2050px;
-}
-.phone {
+.img-fluid {
     width: 200px;
     height: 200px;
     border-radius: 2050px;
