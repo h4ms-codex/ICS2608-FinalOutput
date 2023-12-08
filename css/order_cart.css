@@ -62,11 +62,6 @@ table {
     flex-wrap: wrap;
 }
 
-.test-item-data p {
-    
-}
-
-
 .btn-plus {
     border-radius: 50%;
     margin-left: 3%;
@@ -116,15 +111,6 @@ td {
     text-align: center;
 }
 
-
-
-.row {
-}
-
-
-
-
-
 .item-btn {
     text-indent: 5%;
 }
@@ -136,11 +122,6 @@ td {
 .tbl-qty-txt {
     font-weight: bold;
 }
-
-
-
-
-
 
 .col-ttl {
     text-align: start;
@@ -154,8 +135,6 @@ td {
     font-weight: bold;
     font-family: "KoHo";
 }
-
-
 
 .btn-checkout {
     width: max-content;

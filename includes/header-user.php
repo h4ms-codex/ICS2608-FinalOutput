@@ -9,14 +9,16 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="/GitHub/ICS2608-FinalOutput/css/order_cart.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KoHo&display=swap">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Koh Santepheap'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kreon&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=KohSantepheap&display=swap">
     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar main-navbar navbar-expand-lg">
         <div class="container">
             <div class="d-flex align-items-center">
                 <a href="../user/index.php">
@@ -32,6 +34,10 @@ $currentPage = basename($_SERVER['PHP_SELF']);
             </a>
         </div>
     </nav>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

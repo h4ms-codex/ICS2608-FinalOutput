@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Page</title>
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/product_details.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <?php include '../includes/header-user.php';
-    ?>
+    <?php include '../includes/header-user.php'; ?>
 
     <nav class="navbar navbar-menu navbar-expand-lg sticky-top">
         <div class="container">
@@ -25,7 +25,7 @@
     <!-- Food Section -->
     <div class="container bg-menu">
         <div id="food" class="menu-section">
-            <h2 class="font-kohsan">Food</h2>
+            <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Food</b></h1>
             <div class="row p-3">
                 <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
                     <div class="card">
@@ -36,10 +36,10 @@
                                     <h5 class="card-title">Food</h5>
                                 </div>
                                 <div class="text-right">
-                                    <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                    <span class="font-weight-bold">60</span>
                                 </div>
                             </div>
-                            <button class="order-button font-koho"><b>Add to Cart</b></button>
+                            <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                         </div>
                     </div>
                 </div>
@@ -53,10 +53,10 @@
                                     <h5 class="card-title">Food</h5>
                                 </div>
                                 <div class="text-right">
-                                    <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                    <span class="font-weight-bold">60</span>
                                 </div>
                             </div>
-                            <button class="order-button font-koho"><b>Add to Cart</b></button>
+                            <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                         </div>
                     </div>
                 </div>
@@ -70,10 +70,10 @@
                                     <h5 class="card-title">Food</h5>
                                 </div>
                                 <div class="text-right">
-                                    <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                    <span class="font-weight-bold">60</span>
                                 </div>
                             </div>
-                            <button class="order-button font-koho"><b>Add to Cart</b></button>
+                            <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                         </div>
                     </div>
                 </div>
@@ -87,10 +87,10 @@
                                     <h5 class="card-title">Food</h5>
                                 </div>
                                 <div class="text-right">
-                                    <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                    <span class="font-weight-bold">60</span>
                                 </div>
                             </div>
-                            <button class="order-button font-koho"><b>Add to Cart</b></button>
+                            <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                         </div>
                     </div>
                 </div>
@@ -104,10 +104,10 @@
                                     <h5 class="card-title">Food</h5>
                                 </div>
                                 <div class="text-right">
-                                    <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                    <span class="font-weight-bold">60</span>
                                 </div>
                             </div>
-                            <button class="order-button font-koho"><b>Add to Cart</b></button>
+                            <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                         </div>
                     </div>
                 </div>
@@ -121,10 +121,10 @@
                                     <h5 class="card-title">Food</h5>
                                 </div>
                                 <div class="text-right">
-                                    <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                    <span class="font-weight-bold">60</span>
                                 </div>
                             </div>
-                            <button class="order-button font-koho"><b>Add to Cart</b></button>
+                            <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                         </div>
                     </div>
                 </div>
@@ -134,8 +134,7 @@
             <!-- Drinks Section -->
             <div class="container">
                 <div id="drinks" class="menu-section">
-                    <h2 class="font-koho d-flex align-items-right">Drinks</h2>
-
+                    <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
                     <div class="row p-3">
                         <div class="col-lg-3 col-sm-6">
                             <div class="card">
@@ -146,10 +145,10 @@
                                             <h5 class="card-title">Food</h5>
                                         </div>
                                         <div class="text-right">
-                                            <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                            <span class="font-weight-bold">60</span>
                                         </div>
                                     </div>
-                                    <button class="order-button font-koho"><b>Add to Cart</b></button>
+                                    <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                                 </div>
                             </div>
                         </div>
@@ -163,10 +162,10 @@
                                             <h5 class="card-title">Food</h5>
                                         </div>
                                         <div class="text-right">
-                                            <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                            <span class="font-weight-bold">60</span>
                                         </div>
                                     </div>
-                                    <button class="order-button font-koho"><b>Add to Cart</b></button>
+                                    <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                                 </div>
                             </div>
                         </div>
@@ -180,10 +179,10 @@
                                             <h5 class="card-title">Food</h5>
                                         </div>
                                         <div class="text-right">
-                                            <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                            <span class="font-weight-bold">60</span>
                                         </div>
                                     </div>
-                                    <button class="order-button font-koho"><b>Add to Cart</b></button>
+                                    <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                                 </div>
                             </div>
                         </div>
@@ -197,10 +196,10 @@
                                             <h5 class="card-title">Food</h5>
                                         </div>
                                         <div class="text-right">
-                                            <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                            <span class="font-weight-bold">60</span>
                                         </div>
                                     </div>
-                                    <button class="order-button font-koho"><b>Add to Cart</b></button>
+                                    <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                                 </div>
                             </div>
                         </div>
@@ -214,17 +213,134 @@
                                             <h5 class="card-title">Food</h5>
                                         </div>
                                         <div class="text-right">
-                                            <span class="font-weight-bold">60</span> <!-- Replace with your actual price -->
+                                            <span class="font-weight-bold">60</span>
                                         </div>
                                     </div>
-                                    <button class="order-button font-koho"><b>Add to Cart</b></button>
+                                    <button class="order-button font-koho" data-toggle="modal" data-target="#quantity"><b>Add to Cart</b></button>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-                    <script src="../js/menu.js"></script>
+
+                    <div class="modal fade" id="quantity" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content custom-modal">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!-- Quantity Option -->
+                                <div class="modal-body">
+                                    <h3 class="font-kohsan"><b>Quantity:</b></h3>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button id="decreaseQuantityBtn" class="btn" onclick="updateQuantity(-1)">
+                                            <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                                <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                            </svg>
+                                        </button>
+                                        <input type="number" id="quantityInput" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                                        <button id="increaseQuantityBtn" class="btn" onclick="updateQuantity(1)">
+                                            <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="pt-2">
+                                    <h3 class="font-kohsan"><b>Add-ons:</b></h3>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="modal-body">
+                                        <!-- Extra Rice Option -->
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <h5 class="font-kohsan d-flex text-nowrap"><b>Extra Rice:</b></h5>
+                                                <div class="d-flex align-items-center">
+                                                    <button class="btn" onclick="updateQuantity('extraRice', -1)">
+                                                        <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                            <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                                            <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" id="extraRiceInput" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                                                    <button class="btn" onclick="updateQuantity('extraRice', 1)">
+                                                        <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                            <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <span class="ml-auto">$2.50</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Longganisa Option -->
+                                        <div class="d-flex flex-column align-items-center mt-3">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <h5 class="font-kohsan d-flex"><b>Longganisa:</b></h5>
+                                                <div class="d-flex align-items-center">
+                                                    <button class="btn" onclick="updateQuantity('longganisa', -1)">
+                                                        <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                            <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                                            <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" id="longganisaInput" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                                                    <button class="btn" onclick="updateQuantity('longganisa', 1)">
+                                                        <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                            <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <span class="ml-auto">$3.00</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- Eggs Option -->
+                                        <div class="d-flex flex-column align-items-center mt-3">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <h5 class="font-kohsan d-flex"><b>Eggs:</b></h5>
+                                                <div class="d-flex align-items-center">
+                                                    <button class="btn" onclick="updateQuantity('eggs', -1)">
+                                                        <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                            <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                                            <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                                        </svg>
+                                                    </button>
+                                                    <input type="number" id="eggsInput" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                                                    <button class="btn" onclick="updateQuantity('eggs', 1)">
+                                                        <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                                            <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <span class="ml-auto">$1.50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal-footer d-flex justify-content-center">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="custom-add-btn btn" id="addCart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="../js/menu.js"></script>
+                        <script src="../js/product_details.js"></script>
 </body>
 
 </html>

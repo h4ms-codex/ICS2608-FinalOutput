@@ -1,0 +1,44 @@
+.custom-modal {
+    background-color: #F2E2D4 !important;
+    color: #000000;
+    border-radius: 50px;
+}
+
+.custom-modal .modal-header {
+    background-color: #F2E2D4;
+    color: #000000;
+}
+
+.custom-modal .modal-footer {
+    background-color: #F2E2D4;
+}
+
+.custom-add-btn {
+    background-color: #A84646 !important;
+    border-radius: 50px;
+    color: #F2E2D4 !important;
+}
+
+.custom-add-btn:hover {
+    background-color: #d25e5e !important; /* Change color on hover */
+}
+
+#decreaseQuantityBtn,
+#increaseQuantityBtn {
+    background: none;
+    border: none;
+}
+
+.quantity-icon {
+    stroke: black;
+    stroke-width: 3;
+    fill: none;
+}
+
+.quantity-input {
+    text-align: center;
+}
+
+button:focus {
+    outline: none !important;
+}
