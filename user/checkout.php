@@ -16,7 +16,6 @@
     ?>
     <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Process the form data and perform the create operation
     $firstName = $_POST["firstName"];
     $lastName = $_POST["lastName"];
     $mobileNumber = $_POST["mobileNumber"];
@@ -123,7 +122,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         <p>Total Items: 5</p>
                         <p>Total Price: PHP 50.00</p>
-                        <button class="btn btn-primary back-to-cart">Back to Cart/button>
+                        <button class="btn btn-primary back-to-cart"><a href="order_cart.php">Back to Cart</button>
                     </div>
                  </div>                
                 </div>
