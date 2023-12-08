@@ -1,0 +1,6 @@
+/* Add your styles for the popups here */
+.popup {
+    display: none;
+    position: absolute;
+    /* Add other styling properties as needed */
+}

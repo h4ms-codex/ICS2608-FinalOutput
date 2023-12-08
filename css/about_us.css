@@ -24,4 +24,10 @@ h1{
     max-width: 45%; /* Set the maximum width for the text */
 }
 
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 2050px;
+}
+
 /* Adjust the styles for the text within .aboutus-text as needed */
