@@ -1,6 +1,6 @@
-
-
-
+<?php
+include ("connection.php");
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,22 +48,37 @@
   </tr>
   <tr>
   
+  <?php
     
+    $sql = "SELECT * FROM order-tdetails";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+
+    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+        $order_ID =$row['order_ID'];
+        $quantity =$row['quantity'];
+        $price =$row['price'];
+
+      echo '
     <td class="item-td" >
       <div class="item-info">
-      <button class="btn-x">x</button>
+      <button class="btn-x">
+        <a href="delete.php?deleteID=' . $order_ID . '"> x </a>
+      </button>
         <div class="test-item-data">
-          <p>Liempo with rice</p>
+          <p><!--<?php echo $order_ID; ?>--> Liempo with rice</p>
         </div>
       </div>
     </td>
     <td class="tbl-qty-txt">
       <button class="btn-plus">+</button>
-       3 <button class="btn-minus">-</button></td>
+      <!--<?php echo $quantity; ?>--> 3 <button class="btn-minus">-</button></td>
 
-    <td class="tbl-prc-txt">₱231.00</td>
+    <td class="tbl-prc-txt"><!-- ₱<?php echo $price; ?> -->₱231.00</td>
 
-  </tr>
+  </tr>';
+    }
+      ?>
 
 </table>
 </div>
@@ -78,7 +93,7 @@
 <div class="row">
 <div class="col-2"></div>
 <div class="col-3 col-ttl"><p>Total</p></div>
-<div class="col-3 col-prc"><p>₱231.00</p></div>
+<div class="col-3 col-prc"><p><!-- ₱<?php echo $total; ?> -->₱231.00</p></div>
 <div class="col-2"></div>
 <div class="col-2"></div>
 </div>
