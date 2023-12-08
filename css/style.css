@@ -34,6 +34,11 @@ body {
     font-family: KoHo;
 }
 
+.font-kohsan { 
+    font-family: 'Koh Santepheap';
+    font-size: 22px;
+}
+
 /*--IMAGES--*/
 .logo {
     width: 110px;
