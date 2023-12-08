@@ -71,21 +71,44 @@ include ("connection.php");
       </div>
     </td>
     <td class="tbl-qty-txt">
-      <button class="btn-plus">+</button>
-      <!--<?php echo $quantity; ?>--> 3 <button class="btn-minus">-</button></td>
+      <span class="btn-plus">+</span>
+      <span class="num"><!--<?php echo $quantity; ?>-->3</span>
+      <span class="btn-minus">-</span></td>
 
     <td class="tbl-prc-txt"><!-- ₱<?php echo $price; ?> -->₱231.00</td>
 
   </tr>';
     }
+
       ?>
+
+<script>
+    const btn-plus = document.querySelector(".btn-plus"),
+    btn-minus = document.querySelector(".btn-minus"),
+    num = document.querySelector(".num");
+
+  let a = $quantity;
+
+  btn-plus.addEventListener("click", ()=>{
+    a++;
+    num.innerText = a;
+    console.log(a);
+  });
+
+  btn-minus.addEventListener("click", ()=>{
+    if (a > 1){
+    a--;
+    num.innerText = a;
+    }
+  });
+  </script>
 
 </table>
 </div>
 <div class="col-2">
 <button onclick="redirectmenu()" class="btn-add">Add Order</button>
 <br><br>
-<button class="btn-clr">Clear Cart</button>
+<button class="btn-clr"><a href="clear.php?clearID=' . $order_ID . '"> Clear Cart </a></button>
 </div>
 <div class="col-2"></div>
 
