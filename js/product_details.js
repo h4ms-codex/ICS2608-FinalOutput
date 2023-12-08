@@ -28,3 +28,7 @@
         var newValue = currentValue + delta;
         inputValue.value = newValue >= 1 ? newValue : 1;
     }
+
+$(document).ready(function () {
+    // No changes are required in the menu.js file for this example.
+});

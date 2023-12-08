@@ -33,14 +33,14 @@ include ("connection.php");
 <div class="row">
 <div class="col-2"></div>
 <div class="col-6">
+  
 <table>
   <tr>
     <th class="item-th">Item</th>
-
     <th class="qty-th">Quantity</th>
     <th class="price-th">Price</th>
-
   </tr>
+
   <tr>
   
   <?php
@@ -111,7 +111,14 @@ include ("connection.php");
 <div class="row">
 <div class="col-2"></div>
 <div class="col-3 col-ttl"><p>Total</p></div>
-<div class="col-3 col-prc"><p><!-- ₱<?php echo $total; ?> -->₱231.00</p></div>
+<div class="col-3 col-prc"><p name="tot_amount" id="tot_amount"><!-- ₱<?php echo $total; ?> -->₱231.00</p></div>
+<script>
+  function calcuateAmount($quantity) {
+    var tot_price = $quantity * $price;
+    $total = document.getElementById('tot_amount');
+    $total.value = tot_price;
+  }
+</script>
 <div class="col-2"></div>
 <div class="col-2"></div>
 </div>
