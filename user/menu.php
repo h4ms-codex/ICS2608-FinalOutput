@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../admin/connection.php");
+include("../user/connectionnn.php");
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["addCartBtn"])) {
     $item_name = $_POST["item_name"];

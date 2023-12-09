@@ -4,7 +4,7 @@ include("connectionnn.php");
 
 $deleteID = $_GET['deleteID'];
 
-$sql = "DELETE FROM order_tdetails WHERE order_ID = '$deleteID';";
+$sql = "DELETE FROM order_cart WHERE item_name = '$deleteID';";
 $stmt = $conn->prepare($sql);
 
 $stmt->execute();

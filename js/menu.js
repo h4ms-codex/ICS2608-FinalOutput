@@ -71,7 +71,7 @@ function updateQuantity(inputId, change) {
     const inputElement = document.getElementById(inputId);
     let quantity = parseInt(inputElement.value, 10) + change;
 
-    quantity = Math.max(quantity, 1);
+
 
     inputElement.value = quantity;
 
@@ -110,8 +110,6 @@ $('#addCartBtnBicolExpress').click(function () {
 function updateQuantity(inputId, change) {
     const inputElement = document.getElementById(inputId);
     let quantity = parseInt(inputElement.value, 10) + change;
-
-    quantity = Math.max(quantity, 1);
 
     inputElement.value = quantity;
 
