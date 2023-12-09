@@ -24,23 +24,20 @@ function updateQuantity(inputId, increment) {
 
 
 $('#addCartBtnBicolExpress').click(function () {
-    // Get the data from the modal
-    var itemName = "Bicol Express"; // You can modify this dynamically based on modal content
-    var price = 60.00; // You can modify this dynamically based on modal content
+    var itemName = "Bicol Express"; 
+    var price = 60.00; 
     var quantity = $('#quantityInputBicolExpress').val();
 
-    // Send an AJAX request to add to cart
     $.ajax({
         type: 'POST',
-        url: 'process_cart.php', // Replace with your PHP file handling the cart logic
+        url: 'process_cart.php',
         data: {
-            addCartBtn: true, // Make sure this matches the PHP check
+            addCartBtn: true,
             item_name: itemName,
             price: price,
             quantity: quantity
         },
         success: function (response) {
-            // Check the response and redirect to menu.php
             if (response === 'success') {
                 alert('Item added to cart successfully!');
                 window.location.href = 'menu.php';
