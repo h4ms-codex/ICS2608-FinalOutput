@@ -98,7 +98,7 @@ if (isset($_POST["addCartBtn"])) {
                             <img class="img-fluid" src="../images/IMG_Food-Giniling.PNG" alt="">
                             <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
                                 <div>
-                                    <h5 class="card-title font-weight-bold font-koho">Chicken Curry</h5>
+                                    <h5 class="card-title font-weight-bold font-koho">Giniling</h5>
                                 </div>
                                 <div class="text-right">
                                     <span class="font-weight-bold font-koho">80</span>
@@ -111,64 +111,7 @@ if (isset($_POST["addCartBtn"])) {
             </div>
         </div>
 
-            <!-- Drinks Section -->
-<div id="drinks" class="menu-section">
-    <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
-    <div class="row p-3">
-        <!-- Iced Tea Card -->
-        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="3">
-                <div class="card-body">
-                    <img class="img-fluid" src="../images/IMG_IcedTea.PNG" alt="">
-                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
-                        <div>
-                            <h5 class="card-title font-weight-bold font-koho">Iced Tea</h5>
-                        </div>
-                        <div class="text-right">
-                            <span class="font-weight-bold font-koho">15.00</span>
-                        </div>
-                    </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
-                </div>
-            </div>
-        </div>
-        <!-- card -->
-        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="3">
-                <div class="card-body">
-                    <img class="img-fluid" src="../images/IMG_Mdew.JFIF" alt="">
-                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
-                        <div>
-                            <h5 class="card-title font-weight-bold font-koho">Mountain Dew</h5>
-                        </div>
-                        <div class="text-right">
-                            <span class="font-weight-bold font-koho">20.00</span>
-                        </div>
-                    </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
-                </div>
-            </div>
-        </div>
-        <!-- card -->
-        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="3">
-                <div class="card-body">
-                    <img class="img-fluid" src="../images/IMG_Coca.AVIF" alt="">
-                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
-                        <div>
-                            <h5 class="card-title font-weight-bold font-koho">CocaCola</h5>
-                        </div>
-                        <div class="text-right">
-                            <span class="font-weight-bold font-koho">25.00</span>
-                        </div>
-                    </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    <!-- Quantity Modals for Food Section -->
     <!-- Quantity Modal for Bicol Express -->
     <div class="modal fade" id="quantityBicolExpress" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -267,7 +210,7 @@ if (isset($_POST["addCartBtn"])) {
                     <form method="post" action="menu.php" class="modal-form">
                         <input type="hidden" name="item_name" value="Bicol Express" />
                         <input type="hidden" name="price" value="60.00" />
-                        <h3 class="font-kohsan text-center"><b>Quantity for Bicol Express:</b></h3>
+                        <h3 class="font-kohsan text-center"><b>Quantity for Giniling:</b></h3>
                         <div class="d-flex justify-content-center align-items-center">
                             <button id="decreaseQuantityBtnGiniling" class="btn" type="button" onclick="updateQuantity('quantityInputGiniling', 1)">
                                 <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -294,7 +237,192 @@ if (isset($_POST["addCartBtn"])) {
             </div>
         </div>
     </div>
-    
+
+
+     <!-- Drinks Section -->
+    <div id="drinks" class="menu-section">
+    <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
+    <div class="row p-3">
+        <!-- Iced Tea Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="3">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_IcedTea.PNG" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">Iced Tea</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">15.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityIcedTea"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <!-- Mountain Dew Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="3">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_Mdew.JFIF" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">Mountain Dew</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">20.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityMDew"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <!-- Coca Cola Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="3">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_Coca.AVIF" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">CocaCola</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">25.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Quantity Modals for Drinks Section -->
+    <!-- Quantity Modal for Iced Tea -->
+    <div class="modal fade" id="quantityIcedTea" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content custom-modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form method="post" action="menu.php" class="modal-form">
+                        <input type="hidden" name="item_name" value="Iced Tea" />
+                        <input type="hidden" name="price" value="60.00" />
+                        <h3 class="font-kohsan text-center"><b>Quantity for Iced Tea:</b></h3>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button id="decreaseQuantityBtnIcedTea" class="btn" type="button" onclick="updateQuantity('quantityInputIcedTea', 1)">
+                                <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                    <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                    <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                </svg>
+                            </button>
+                            <input type="number" name="quantity" id="quantityInputIcedTea" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                            <button id="increaseQuantityBtnIcedTea" class="btn" type="button" onclick="updateQuantity('quantityInputIcedTea', -1)">
+                                <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                    <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="custom-add-btn btn" id="addCartBtnBicolExpress">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Quantity Modal for Mountain Dew -->
+<div class="modal fade" id="quantityMDew" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content custom-modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form method="post" action="menu.php" class="modal-form">
+                        <input type="hidden" name="item_name" value="Mountain Dew" />
+                        <input type="hidden" name="price" value="60.00" />
+                        <h3 class="font-kohsan text-center"><b>Quantity for Mountain Dew:</b></h3>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button id="decreaseQuantityBtnMdew" class="btn" type="button" onclick="updateQuantity('quantityInputMDew', 1)">
+                                <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                    <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                    <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                </svg>
+                            </button>
+                            <input type="number" name="quantity" id="quantityInputMDew" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                            <button id="increaseQuantityBtnMDew" class="btn" type="button" onclick="updateQuantity('quantityInputMDew', -1)">
+                                <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                    <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="custom-add-btn btn" id="addCartBtnBicolExpress">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+<!-- Quantity Modal for CocaCola -->
+    <div class="modal fade" id="quantityCocaCola" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content custom-modal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <form method="post" action="menu.php" class="modal-form">
+                        <input type="hidden" name="item_name" value="CocaCola" />
+                        <input type="hidden" name="price" value="60.00" />
+                        <h3 class="font-kohsan text-center"><b>Quantity for CocaCola:</b></h3>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button id="decreaseQuantityBtnCocaCola" class="btn" type="button" onclick="updateQuantity('quantityInputCocaCola', 1)">
+                                <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                    <line x1="19.3334" y1="9.82471" x2="19.3334" y2="29.8247" stroke="black" stroke-width="4" />
+                                    <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                </svg>
+                            </button>
+                            <input type="number" name="quantity" id="quantityInputCocaCola" value="1" min="1" class="mx-2" style="background: transparent; border: none; text-align: center;" readonly />
+                            <button id="increaseQuantityBtnCocaCola" class="btn" type="button" onclick="updateQuantity('quantityInputCocaCola', -1)">
+                                <svg width="30" height="30" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="20" cy="20.4912" r="18.5" fill="transparent" stroke="black" stroke-width="3" />
+                                    <line x1="9.33337" y1="20.3247" x2="30.6667" y2="20.3247" stroke="black" stroke-width="3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="custom-add-btn btn" id="addCartBtnBicolExpress">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/product_details.js"></script>
