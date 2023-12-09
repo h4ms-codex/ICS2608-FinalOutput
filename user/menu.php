@@ -111,11 +111,63 @@ if (isset($_POST["addCartBtn"])) {
             </div>
         </div>
 
-        <div id="drinks" class="menu-section">
-            <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
+            <!-- Drinks Section -->
+<div id="drinks" class="menu-section">
+    <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
+    <div class="row p-3">
+        <!-- Iced Tea Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="3">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_IcedTea.PNG" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">Iced Tea</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">15.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
+                </div>
+            </div>
         </div>
-        
+        <!-- card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="3">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_Mdew.JFIF" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">Mountain Dew</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">20.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <!-- card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="3">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_Coca.AVIF" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">CocaCola</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">25.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
     <!-- Quantity Modal for Bicol Express -->
     <div class="modal fade" id="quantityBicolExpress" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
@@ -242,7 +294,7 @@ if (isset($_POST["addCartBtn"])) {
             </div>
         </div>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
     <script src="../js/menu.js"></script>
     <script src="../js/product_details.js"></script>
