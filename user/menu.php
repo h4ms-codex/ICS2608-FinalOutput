@@ -122,8 +122,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["addCartBtn"])) {
             </div>
         </div>
 
+        <!-- Drinks Section -->
         <div id="drinks" class="menu-section">
             <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
+            <div class="row p-3">
+        <!-- Iced Tea Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="4">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_IcedTea.PNG" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">Iced Tea</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">15.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityIcedTea"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <!-- Mountain Dew Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="5">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_Mdew.JFIF" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">Mountain Dew</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">20.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityMDew"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+        <!-- Coca Cola Card -->
+        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
+            <div class="card" data-menuitem-id="6">
+                <div class="card-body">
+                    <img class="img-fluid" src="../images/IMG_Coca.AVIF" alt="">
+                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
+                        <div>
+                            <h5 class="card-title font-weight-bold font-koho">CocaCola</h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-weight-bold font-koho">25.00</span>
+                        </div>
+                    </div>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityCocaCola"><b>Add to Cart</b></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         </div>
 
     </div>
@@ -252,66 +308,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST["addCartBtn"])) {
             </div>
         </div>
     </div>
-
-
-     <!-- Drinks Section -->
-    <div id="drinks" class="menu-section">
-    <h1 class="font-kohsan text-lg-left pl-lg-3"><b>Drinks</b></h1>
-    <div class="row p-3">
-        <!-- Iced Tea Card -->
-        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="4">
-                <div class="card-body">
-                    <img class="img-fluid" src="../images/IMG_IcedTea.PNG" alt="">
-                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
-                        <div>
-                            <h5 class="card-title font-weight-bold font-koho">Iced Tea</h5>
-                        </div>
-                        <div class="text-right">
-                            <span class="font-weight-bold font-koho">15.00</span>
-                        </div>
-                    </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityIcedTea"><b>Add to Cart</b></button>
-                </div>
-            </div>
-        </div>
-        <!-- Mountain Dew Card -->
-        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="5">
-                <div class="card-body">
-                    <img class="img-fluid" src="../images/IMG_Mdew.JFIF" alt="">
-                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
-                        <div>
-                            <h5 class="card-title font-weight-bold font-koho">Mountain Dew</h5>
-                        </div>
-                        <div class="text-right">
-                            <span class="font-weight-bold font-koho">20.00</span>
-                        </div>
-                    </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityMDew"><b>Add to Cart</b></button>
-                </div>
-            </div>
-        </div>
-        <!-- Coca Cola Card -->
-        <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="6">
-                <div class="card-body">
-                    <img class="img-fluid" src="../images/IMG_Coca.AVIF" alt="">
-                    <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
-                        <div>
-                            <h5 class="card-title font-weight-bold font-koho">CocaCola</h5>
-                        </div>
-                        <div class="text-right">
-                            <span class="font-weight-bold font-koho">25.00</span>
-                        </div>
-                    </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityCocaCola"><b>Add to Cart</b></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    
     <!-- Quantity Modals for Drinks Section -->
     <!-- Quantity Modal for Iced Tea -->
     <div class="modal fade" id="quantityIcedTea" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel" aria-hidden="true">
