@@ -1,5 +1,5 @@
 <?php
-include ("connection.php");
+include ("connectionnn.php");
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +45,9 @@ include ("connection.php");
   
   <?php
     
-    $sql = "SELECT * FROM order-tdetails";
+    $total = 0;
+
+    $sql = "SELECT * FROM order_tdetails";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
 
@@ -54,6 +56,12 @@ include ("connection.php");
         $quantity =$row['quantity'];
         $price =$row['price'];
 
+    // Calculate total price for each item
+    $itemTotal = $quantity * $price;
+
+    // Add the item total to the overall total
+    $total += $itemTotal;
+
       echo '
     <td class="item-td" >
       <div class="item-info">
@@ -61,49 +69,107 @@ include ("connection.php");
         <a href="delete.php?deleteID=' . $order_ID . '"> x </a>
       </button>
         <div class="test-item-data">
-          <p><!--<?php echo $order_ID; ?>--> Liempo with rice</p>
+          <p href="order_cart?order_ID=' . $order_ID . '">'. $order_ID .'</p>
         </div>
       </div>
     </td>
     <td class="tbl-qty-txt">
-      <span class="btn-plus">+</span>
-      <span class="num"><!--<?php echo $quantity; ?>-->3</span>
-      <span class="btn-minus">-</span></td>
+      <button class="plus">+</button>
+      
 
-    <td class="tbl-prc-txt"><!-- ₱<?php echo $price; ?> -->₱231.00</td>
+
+      <span class="num" data-order-id="' . $order_ID .'">' . $quantity . '</span>
+
+
+      <button class="minus">-</button></td>
+
+    <td class="tbl-prc-txt"> ₱ ' . $price . ' </td>
 
   </tr>';
     }
 
       ?>
 
+
+
+<!-- ... (your existing HTML code) ... -->
+
+
+
 <script>
-    const btn-plus = document.querySelector(".btn-plus"),
-    btn-minus = document.querySelector(".btn-minus"),
-    num = document.querySelector(".num");
+  document.addEventListener("DOMContentLoaded", function () {
+    const plusButtons = document.querySelectorAll(".plus");
+    const minusButtons = document.querySelectorAll(".minus");
+    const quantityElements = document.querySelectorAll(".num");
+    const priceElements = document.querySelectorAll(".tbl-prc-txt");
+    const totalAmountElement = document.getElementById("tot_amount");
 
-  let a = $quantity;
+    let quantities = Array.from(quantityElements).map((element) => parseInt(element.innerText));
+    const prices = Array.from(priceElements).map((element) => parseFloat(element.innerText.replace('₱', '').trim()));
 
-  btn-plus.addEventListener("click", ()=>{
-    a++;
-    num.innerText = a;
-    console.log(a);
-  });
-
-  btn-minus.addEventListener("click", ()=>{
-    if (a > 1){
-    a--;
-    num.innerText = a;
+    function updateTotalAmount() {
+      let total = 0;
+      for (let i = 0; i < quantities.length; i++) {
+        total += quantities[i] * prices[i];
+      }
+      totalAmountElement.innerText = '₱' + total.toFixed(2);
     }
+
+
+
+    function updateQuantity(orderID, newQuantity, index) {
+  // Make an AJAX request to update the quantity in the database
+  const xhr = new XMLHttpRequest();
+  xhr.open("POST", "update_quantity.php", true);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      // Quantity updated successfully, update the local quantity and total amount
+      quantities[index] = newQuantity;
+      updateTotalAmount();
+    }
+  };
+  xhr.send(`order_id=${orderID}&new_quantity=${newQuantity}`);
+}
+
+    
+
+    plusButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        quantities[index]++;
+        quantityElements[index].innerText = quantities[index];
+        updateQuantity(quantityElements[index].dataset.orderId, quantities[index], index);
+      });
+    });
+    
+    minusButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        if (quantities[index] > 1) {
+          quantities[index]--;
+          quantityElements[index].innerText = quantities[index];
+          updateQuantity(quantityElements[index].dataset.orderId, quantities[index], index);
+        }
+      });
+    });
   });
-  </script>
+</script>
+
+
+
+
+<!-- ... (your existing HTML code) ... -->
+
+
+
 
 </table>
 </div>
 <div class="col-2">
 <button onclick="redirectmenu()" class="btn-add">Add Order</button>
 <br><br>
-<button class="btn-clr"><a href="clear.php?clearID=' . $order_ID . '"> Clear Cart </a></button>
+
+<button class="btn-clr"><a href="clear.php?clearID=' . $order_ID . '"> Clear Cart </a></button>'
+
 </div>
 <div class="col-2"></div>
 
@@ -111,14 +177,12 @@ include ("connection.php");
 <div class="row">
 <div class="col-2"></div>
 <div class="col-3 col-ttl"><p>Total</p></div>
-<div class="col-3 col-prc"><p name="tot_amount" id="tot_amount"><!-- ₱<?php echo $total; ?> -->₱231.00</p></div>
-<script>
-  function calcuateAmount($quantity) {
-    var tot_price = $quantity * $price;
-    $total = document.getElementById('tot_amount');
-    $total.value = tot_price;
-  }
-</script>
+<div class="col-3 col-prc"><p name="tot_amount" id="tot_amount">₱<?php echo number_format($total, 2); ?></p></div>
+
+
+
+
+
 <div class="col-2"></div>
 <div class="col-2"></div>
 </div>
