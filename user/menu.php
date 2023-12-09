@@ -334,7 +334,7 @@ if (isset($_POST["addCartBtn"])) {
 
                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="custom-add-btn btn" id="addCartBtnBicolExpress">Add to Cart</button>
+                    <button type="button" class="custom-add-btn btn" id="addCartBtnIcedTea">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -376,7 +376,7 @@ if (isset($_POST["addCartBtn"])) {
 
                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="custom-add-btn btn" id="addCartBtnBicolExpress">Add to Cart</button>
+                    <button type="button" class="custom-add-btn btn" id="addCartBtnMDew">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -418,7 +418,7 @@ if (isset($_POST["addCartBtn"])) {
 
                 <div class="modal-footer d-flex justify-content-center">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="button" class="custom-add-btn btn" id="addCartBtnBicolExpress">Add to Cart</button>
+                    <button type="button" class="custom-add-btn btn" id="addCartBtnCocaCola">Add to Cart</button>
                 </div>
             </div>
         </div>
