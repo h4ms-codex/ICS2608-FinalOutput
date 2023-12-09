@@ -4,7 +4,7 @@ include("connectionnn.php");
 
 $clearID = $_GET['clearID'];
 
-$sql = "TRUNCATE TABLE order_tdetails;";
+$sql = "TRUNCATE TABLE order_cart;";
 $stmt = $conn->prepare($sql);
 
 $stmt->execute();
