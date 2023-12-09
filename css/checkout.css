@@ -6,6 +6,10 @@ body {
 
 }
 
+.order-header{
+    margin-top:15%;
+    float:left;
+}
 .custom-text-box {
     background-color: rgba(242, 226, 212, 0.7); 
     padding: 10px;
@@ -24,27 +28,6 @@ body {
     margin:5%;
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
 }
-.ordersummary-container{
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding:10px;
-    overflow: hidden;
-    background-color: #C69D9D;
-    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
-    margin:65%;
-    padding:50%;
-    width: auto;
-    height: auto;
-    margin-top: 10px;
-    padding-top: 15%;
-    padding-bottom: 15%;
-    justify-content: center;
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;                          
-    flex: 1;
-}
-
 
 .payment-container{
     border: 1px solid #ddd;
@@ -54,12 +37,13 @@ body {
     background-color: #C69D9D;
     box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
     margin-left:10%;
-    margin-top: 65%;
-    padding:30%;
+    margin-top: 15%;
+    padding:25%;
     width: 350px;
 }
 
-.place-order-btn {
+
+.order-btn {
     background-color: #A84646;
     color: #ffffff;
     border: none;
@@ -67,11 +51,8 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: grid;
-    position: relative;
-    grid-template-rows: auto 1fr;
-    flex: 1;
     border-radius: 10px;
+    margin-top: 10%;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1200px) {

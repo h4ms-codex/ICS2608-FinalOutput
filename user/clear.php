@@ -1,10 +1,10 @@
 <?php
 
-include("connection.php");
+include("connectionnn.php");
 
 $clearID = $_GET['clearID'];
 
-$sql = "DELETE * FROM order-tdetails WHERE order_ID = $clearID";
+$sql = "TRUNCATE TABLE order_tdetails;";
 $stmt = $conn->prepare($sql);
 
 $stmt->execute();

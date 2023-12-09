@@ -1,10 +1,10 @@
 <?php
 
-include("connection.php");
+include("connectionnn.php");
 
 $deleteID = $_GET['deleteID'];
 
-$sql = "DELETE FROM order-tdetails WHERE order_ID = $deleteID";
+$sql = "DELETE FROM order_tdetails WHERE order_ID = '$deleteID';";
 $stmt = $conn->prepare($sql);
 
 $stmt->execute();

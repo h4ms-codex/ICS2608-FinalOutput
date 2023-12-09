@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
-
+                <div class="deliverycontainer-position">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="delivery-container">
@@ -79,11 +79,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </div>
                 </div>
 </div>
+
+
                 </form>   
-                            <div class="row">
                         <div class="col-md-3">
-                     
-                                <div class="payment-container">
+                        <div class="payment-container">
                     <h2>Payment Method:</h2>
                     <form action="#" method="post">
                         <div class="form-check">
@@ -104,30 +104,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard">
                             <label class="form-check-label" for="creditCard">
                                 Credit Card
+                                <br>
+                                <div class="row">
+                                <h3 class="order-header">Order Summary</h2>
+                                <p>Total Items: 5</p>
+                                <p>Total Price: PHP 50.00</p>
+<button class="order-btn"><a href="order_cart.php">Back to Cart</button>
+<button class="order-btn"><a href="order_confirmation.php">Place Order</a></button>
+</div>
                             </label>
                         </div>
                     </form>
-                    <button class="place-order-btn"><a href="order_confirmation.php">Place Order</a></button>
+
                 </div>                                                                      
             </div>
             </div>
             </div>
-            </div>                                                                                                
- 
-                    <div class="row">
-                        <div class="col-md-2">
-             
-                            <div class="ordersummary-container">
-                        <h2>Order Summary</h2>
-
-                        <p>Total Items: 5</p>
-                        <p>Total Price: PHP 50.00</p>
-                        <button class="btn btn-primary back-to-cart"><a href="order_cart.php">Back to Cart</button>
-                    </div>
-                 </div>                
-                </div>
-            </div>
-        </div>                                                                                                
+            </div>               
+            </div>                                                                                                                                                                          
 
                                                                                                 
 
