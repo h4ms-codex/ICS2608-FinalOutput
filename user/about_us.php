@@ -18,7 +18,7 @@
             <h2>Liempohan sa Antonio</h2>
             <p>is a local restaurant chain located in 1258 Antonio St, Sampaloc, Manila, 1015 Metro Manila. We specialize in selling all sorts of Filipino food such as liempo and sisig, all homemade. Our open hours is from 8AM-6PM every weekday (Monday-Friday) and is closed every weekend (Saturday & Sunday). </p>
             <br><br>
-            <p><img class="img-fluid" src="../images/phone_icon.png" alt="phone"> 09171741545</p>
+            <p><img class="img-phone" src="../images/phone_icon.png" alt="phone"> 09171741545</p>
         </div>
     </div>
 
