@@ -1,4 +1,3 @@
-<!--NEED ILAGAY CONNECTION SA KUNG ANUMANG GAGAMITING DATABASE-->
 
 <?php
 $host="localhost";

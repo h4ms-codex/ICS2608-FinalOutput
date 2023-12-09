@@ -56,10 +56,9 @@ include ("connectionnn.php");
         $quantity =$row['quantity'];
         $price =$row['price'];
 
-    // Calculate total price for each item
+    
     $itemTotal = $quantity * $price;
 
-    // Add the item total to the overall total
     $total += $itemTotal;
 
       echo '
@@ -91,11 +90,6 @@ include ("connectionnn.php");
       ?>
 
 
-
-<!-- ... (your existing HTML code) ... -->
-
-
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const plusButtons = document.querySelectorAll(".plus");
@@ -118,13 +112,13 @@ include ("connectionnn.php");
 
 
     function updateQuantity(orderID, newQuantity, index) {
-  // Make an AJAX request to update the quantity in the database
+
   const xhr = new XMLHttpRequest();
   xhr.open("POST", "update_quantity.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      // Quantity updated successfully, update the local quantity and total amount
+
       quantities[index] = newQuantity;
       updateTotalAmount();
     }
@@ -153,12 +147,6 @@ include ("connectionnn.php");
     });
   });
 </script>
-
-
-
-
-<!-- ... (your existing HTML code) ... -->
-
 
 
 
@@ -197,8 +185,6 @@ include ("connectionnn.php");
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-
 
 </body>
 
