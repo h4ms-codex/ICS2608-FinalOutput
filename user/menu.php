@@ -290,7 +290,7 @@ if (isset($_POST["addCartBtn"])) {
                             <span class="font-weight-bold font-koho">25.00</span>
                         </div>
                     </div>
-                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantitySoda"><b>Add to Cart</b></button>
+                    <button type="button" class="order-button font-koho" data-toggle="modal" data-target="#quantityCocaCola"><b>Add to Cart</b></button>
                 </div>
             </div>
         </div>
