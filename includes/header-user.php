@@ -21,7 +21,7 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     <nav class="navbar main-navbar navbar-expand-lg">
         <div class="container">
             <div class="d-flex align-items-center">
-                <a href="../user/index.php">
+                <a href="../user/menu.php">
                     <img class="logo" src="../images/Liempohan_Logo.png" alt="">
                 </a>
                 <a href="../user/menu.php" class="ml-4 nav-link nav-font-koho <?php echo ($currentPage === 'menu.php') ? 'active' : ''; ?>">Menu</a>

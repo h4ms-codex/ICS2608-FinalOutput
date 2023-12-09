@@ -1,34 +1,56 @@
   $(document).ready(function () {
-    // Quantity modal
     $('#quantity').on('show.bs.modal', function (event) {
-      var button = $(event.relatedTarget); // Button that triggered the modal
+      var button = $(event.relatedTarget);
       var modal = $(this);
 
-      // Clear previous values
       modal.find('#quantityInput').val(1);
     });
 
-    // Add to Cart button in the quantity modal
-    $('#addCart').click(function () {
+    $('#addCartBtn').click(function () {
       var quantity = $('#quantityInput').val();
-      // Perform actions with the selected quantity (e.g., add to cart logic)
-
-      // Close the modal
-      $('#quantityModal').modal('hide');
+      $('#quantity').modal('hide');
     });
   });
 
+function updateQuantity(inputId, increment) {
+    var inputElement = document.getElementById(inputId);
+    var currentValue = parseInt(inputElement.value);
+    var newValue = currentValue + increment;
 
-    function changeValue(inputId, delta) {
-        var inputValue = document.getElementById(inputId);
-        var currentValue = parseInt(inputValue.value);
+    newValue = Math.max(newValue, 0);
 
-        currentValue = isNaN(currentValue) || currentValue < 1 ? 1 : currentValue;
+    inputElement.value = newValue;
+}
 
-        var newValue = currentValue + delta;
-        inputValue.value = newValue >= 1 ? newValue : 1;
-    }
+// JavaScript for Bicol Express modal
+$('#addCartBtnBicolExpress').click(function () {
+    // Get the data from the modal
+    var itemName = "Bicol Express"; // You can modify this dynamically based on modal content
+    var price = 60.00; // You can modify this dynamically based on modal content
+    var quantity = $('#quantityInputBicolExpress').val();
 
-$(document).ready(function () {
-    // No changes are required in the menu.js file for this example.
+    // Send an AJAX request to add to cart
+    $.ajax({
+        type: 'POST',
+        url: 'process_cart.php', // Replace with your PHP file handling the cart logic
+        data: {
+            addCartBtn: true, // Make sure this matches the PHP check
+            item_name: itemName,
+            price: price,
+            quantity: quantity
+        },
+        success: function (response) {
+            // Check the response and redirect to menu.php
+            if (response === 'success') {
+                alert('Item added to cart successfully!');
+                window.location.href = 'menu.php';
+            } else {
+                alert('Failed to add item to cart. Please try again.');
+            }
+        },
+        error: function () {
+            alert('An error occurred. Please try again.');
+        }
+    });
 });
+
