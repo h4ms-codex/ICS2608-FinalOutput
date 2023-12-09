@@ -107,21 +107,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <br>
                                 <div class="row">
                                 <h3 class="order-header">Order Summary</h2>
-                                <p>Total Items: 5</p>
-                                <p>Total Price: PHP 50.00</p>
-<button class="order-btn"><a href="order_cart.php">Back to Cart</button>
-<button class="order-btn"><a href="order_confirmation.php">Place Order</a></button>
-</div>
+
+                                <p>Total</p>
+                                </div>
+                                 <div class="col-3 col-prc">
+                                    <p name="tot_amount" id="tot_amount">
+                                <?php
+                                    if (isset($_GET['total'])) {
+                                $total = $_GET['total'];
+                                echo '₱' . number_format($total, 2);
+                                } else {
+                                echo '₱0.00';
+                                }
+                                ?>
+                                </p>
+                                    <button class="order-btn"><a href="order_cart.php">Back to Cart</button>
+                                    <button class="order-btn"><a href="order_confirmation.php">Place Order</a></button>
+                                    </div>
                             </label>
                         </div>
                     </form>
-
-                </div>                                                                      
-            </div>
-            </div>
-            </div>
-            </div>               
-            </div>                                                                                                                                                                          
+                            </div>
+                            </div>
+                                                                                                                                                                       
 
                                                                                                 
 
