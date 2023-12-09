@@ -93,7 +93,7 @@ if (isset($_POST["addCartBtn"])) {
 
                 <!-- Giniling Card -->
                 <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-                    <div class="card" data-menuitem-id="2">
+                    <div class="card" data-menuitem-id="3">
                         <div class="card-body">
                             <img class="img-fluid" src="../images/IMG_Food-Giniling.PNG" alt="">
                             <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
@@ -245,7 +245,7 @@ if (isset($_POST["addCartBtn"])) {
     <div class="row p-3">
         <!-- Iced Tea Card -->
         <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="3">
+            <div class="card" data-menuitem-id="4">
                 <div class="card-body">
                     <img class="img-fluid" src="../images/IMG_IcedTea.PNG" alt="">
                     <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
@@ -262,7 +262,7 @@ if (isset($_POST["addCartBtn"])) {
         </div>
         <!-- Mountain Dew Card -->
         <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="3">
+            <div class="card" data-menuitem-id="5">
                 <div class="card-body">
                     <img class="img-fluid" src="../images/IMG_Mdew.JFIF" alt="">
                     <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
@@ -279,7 +279,7 @@ if (isset($_POST["addCartBtn"])) {
         </div>
         <!-- Coca Cola Card -->
         <div class="col-lg-3 col-sm-6 pt-sm-3 pt-lg-0">
-            <div class="card" data-menuitem-id="3">
+            <div class="card" data-menuitem-id="6">
                 <div class="card-body">
                     <img class="img-fluid" src="../images/IMG_Coca.AVIF" alt="">
                     <div class="d-flex justify-content-between align-items-start mt-3 mb-3">
