@@ -22,7 +22,7 @@ function updateQuantity(inputId, increment) {
     inputElement.value = newValue;
 }
 
-// JavaScript for Bicol Express modal
+
 $('#addCartBtnBicolExpress').click(function () {
     // Get the data from the modal
     var itemName = "Bicol Express"; // You can modify this dynamically based on modal content

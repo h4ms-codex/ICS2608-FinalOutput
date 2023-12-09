@@ -28,9 +28,6 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <a href="../user/about_us.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'about_us.php') ? 'active' : ''; ?>">About us</a>
             </div>
             <a href="../user/order_cart.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'order_cart.php') ? 'active' : ''; ?>">Cart
-                <span class="custom-badge badge rounded-circle">
-                    <?php echo isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0; ?>
-                </span>
             </a>
         </div>
     </nav>
