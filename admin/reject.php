@@ -1,5 +1,5 @@
 <?php
-include("../admin/connection.php");
+include("connection.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $deleteID = $_GET['deleteID'];
@@ -9,5 +9,5 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $stmt->bindParam(':deleteID', $deleteID, PDO::PARAM_INT);
     $stmt->execute();
 
-    header("location: order_cart.php");
+    header("location: order_details.php");
 }

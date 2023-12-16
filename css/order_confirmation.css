@@ -1,22 +1,5 @@
-section {
-    padding: 20px;
-}
-
-.order-container,
-.order-summary {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #C69D9D;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-
-@media (max-width: 768px) {
-    .order-container,
-    .order-summary {
-        padding: 10px;
-        max-width: 100%;
+@media (min-width: 768px) {
+    .custom-container-width {
+        width: 75% !important;
     }
 }

@@ -1,5 +1,22 @@
 <?php
 $currentPage = basename($_SERVER['PHP_SELF']);
+
+function getCartItemCount()
+{
+    include("../admin/connection.php");
+
+    try {
+        $sql = "SELECT COUNT(*) as count FROM order_cart";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        return ($result && isset($result['count']))
+            ? "{$result['count']}" : "";
+    } catch (PDOException $e) {
+        return "";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +44,14 @@ $currentPage = basename($_SERVER['PHP_SELF']);
                 <a href="../user/menu.php" class="ml-4 nav-link nav-font-koho <?php echo ($currentPage === 'menu.php') ? 'active' : ''; ?>">Menu</a>
                 <a href="../user/about_us.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'about_us.php') ? 'active' : ''; ?>">About us</a>
             </div>
-            <a href="../user/order_cart.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'order_cart.php') ? 'active' : ''; ?>">Cart
+            <a href="../user/order_cart.php" class="nav-link nav-font-koho <?php echo ($currentPage === 'order_cart.php') ? 'active' : ''; ?>">
+                <svg width="32" height="32" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="#F2E2D4" />
+                    <text x="50%" y="65%" font-size="23" text-anchor="middle" fill="#000000" class="font">
+                        <?php echo getCartItemCount(); ?>
+                    </text>
+                </svg>
+                Cart
             </a>
         </div>
     </nav>

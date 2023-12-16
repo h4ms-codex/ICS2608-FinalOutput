@@ -66,5 +66,13 @@ img {
     padding: 10px;
     border-radius: 10px;
   }
+
+  input.custom-input {
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+
   
 

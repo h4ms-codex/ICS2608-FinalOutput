@@ -1,6 +1,6 @@
 <?php
 
-include("connectionnn.php");
+include("../admin/connection.php");
 
 $clearID = $_GET['clearID'];
 

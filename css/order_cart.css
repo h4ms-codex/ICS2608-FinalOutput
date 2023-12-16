@@ -1,154 +1,69 @@
-h1 {
-    text-align: center;
-    font-family: "Kreon";
-    font-weight: bold;
-}
 
-.ordercart-container {
-   margin: 1%;
-
-}
-
-
-
-.btn-add {
-    width: max-content;
-    border-radius: 10px;
-    background-color: #977B7B;
-    color: #F2E2D4;
-    border: 0px;
-    padding-left: 35%;
-    padding-right: 35%;
-    font-weight: bold;
-    font-family: "KoHo";
-    
-}
-
-.btn-clr {
-    width: max-content;
-    border-radius: 10px;
-    background-color: #977B7B;
-    color: #F2E2D4;
-    border: 0px;
-    padding-left: 35%;
-    padding-right: 35%;
-    font-weight: bold;
-    font-family: "KoHo";
-}
-
-table {
-    width: 100%;
-    background-color: #C69D9D;
-    border-radius: 11px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.40);
-    font-family: "KoHo";
-}
-
-.btn-x {
-    width: max-content;
-    border-color: black;
-    border-radius: 50%;
-    margin-left: 3%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-weight: bold;
-    background-color: #F2E2D4;
-}
-
-.item-info {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.btn-plus {
-    border-radius: 50%;
-    margin-left: 3%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    font-weight: bold;
-    background-color: #F2E2D4;
-}
-
-.btn-minus {
-    border-radius: 50%;
-    margin-left: 3%;
-    margin-right: 5%;
-    margin-bottom: 3%;
-    font-weight: bold;
-    background-color: #F2E2D4;
-}
-
-.item-th {
-    width: 50%;
-    text-align: center;
-    font-size:x-large;
-    font-family: "Koh Santepheap";
-    margin: 10%;
-}
-
-.qty-th {
-    width: 25%;
-    text-align: center;
-    font-size: x-large;
-    font-family: "Koh Santepheap";
-}
-
-.price-th {
-    width: 25%;
-    text-align: center;
-    font-size: x-large;
-    font-family: "Koh Santepheap";
-}
-
-.item-td {
-    text-align: start;
-    
-}
-
-td {
-    text-align: center;
-}
-
-.item-btn {
-    text-indent: 5%;
-}
-
-.tbl-prc-txt {
-    font-weight: bold;
-}
-
-.tbl-qty-txt {
-    font-weight: bold;
-}
-
-.col-ttl {
-    text-align: start;
-    font-size: large;
-    font-weight: bold;
-    font-family: "Koh Santepheap";    
-}
-
-.col-prc {
-    text-align: end;
-    font-weight: bold;
-    font-family: "KoHo";
-}
-
-.btn-checkout {
-    width: max-content;
-    background-color: #A84646;
-    color: #F2E2D4;
+.custom-container {
     border-radius: 20px;
-    border: 0px;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-weight: bold;
-    font-family: "KoHo";
+    background-color: #C69D9D !important;
 }
 
-.col-checkout {
+.custom-card{
+    border-radius: 50px;
+    background-color: #C69D9D !important;
+}
+
+.cart-font {
+    color: #000;
     text-align: center;
+    font-family: Koh Santepheap;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none !important;
+} 
+
+input {
+    width: 43px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.custom-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background: #977B7B;
+  color: #F2E2D4;
+}
+
+.custom-btn-sm {
+  width: 135px;
+  height: 40px;
+  border-radius: 20px;
+  background: #977B7B;
+  color: #F2E2D4;
+}
+
+.custom-btn-check {
+  width: 200px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #A84646;
+  color: #F2E2D4;
+}
+
+@media (min-width: 768px) {
+    .custom-container-width {
+        width: 75% !important;
+    }
+}
+
+.navbar-menu {
+    background-color: #F2E2D4 !important;
+  }

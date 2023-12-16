@@ -31,7 +31,7 @@ body {
 }
 
 .font-koho {
-    font-family: KoHo;
+    font-family: KoHo !important;
 }
 
 .font-kohsan { 
@@ -44,5 +44,4 @@ body {
     height: 80px;
     flex-shrink: 0;
 }
-
 

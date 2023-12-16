@@ -1,67 +1,7 @@
-body {
-    font-family: 'KoHo', sans-serif;      
-    margin: 0;
-    padding: 0;
-    background-color: #F2E2D4;
-
-}
-
-.order-header{
-    margin-top:15%;
-    float:left;
-}
-.custom-text-box {
-    background-color: rgba(242, 226, 212, 0.7); 
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 10px; 
-    width: 100%;
-    border: none; 
-}
-
-.delivery-container{
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding:10px;
-    overflow: hidden;
-    background-color: #C69D9D;
-    margin:5%;
-    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
-}
-
-.payment-container{
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding:10px;
-    overflow: hidden;
-    background-color: #C69D9D;
-    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.40);
-    margin-left:10%;
-    margin-top: 15%;
-    padding:25%;
-    width: 350px;
-}
-
-
-.order-btn {
-    background-color: #A84646;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-    margin-top: 10%;
-}
-
-@media screen and (min-width: 600px) and (max-width: 1200px) {
-    body {
-        font-size: 14px;
-    }
-
-    .container {
-        width: 70%;
-        margin: 0 auto;
-    }
-}
+.custom-btn {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background: #977B7B;
+    color: #F2E2D4;
+  }

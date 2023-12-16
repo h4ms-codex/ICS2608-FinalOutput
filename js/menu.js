@@ -11,7 +11,6 @@ $(document).ready(function () {
             }
         }
     });
-    
 
     var foodOffset = $("#food").offset().top;
     var drinksOffset = $("#drinks").offset().top;
@@ -31,90 +30,21 @@ $(document).ready(function () {
     });
 });
 
-$('[id^="quantity"]').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget);
-    var itemName = button.data('item-name');
-    var modal = $(this);
-    modal.find('#itemNamePlaceholder').text(itemName);
-});
-
-$('#addCartBtnBicolExpress').click(function () {
-    var itemName = "Bicol Express";
-    var price = 60.00;
-    var quantity = $('#quantityInputBicolExpress').val();
-
-    $.ajax({
-        type: 'POST',
-        url: 'order_cart.php',
-        data: {
-            addCartBtn: true,
-            item_name: itemName,
-            price: price,
-            quantity: quantity
-        },
-        success: function (response) {
-            // Check the response and redirect to menu.php
-            if (response === 'success') {
-                alert('Item added to cart successfully!');
-                window.location.href = 'menu.php';
-            } else {
-                alert('Failed to add item to cart. Please try again.');
-            }
-        },
-        error: function () {
-            alert('An error occurred. Please try again.');
-        }
+$(document).ready(function () {
+    $('#quantity').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var modal = $(this);
+      modal.find('#quantityInput').val(1);
     });
-});
-
-function updateQuantity(inputId, change) {
-    const inputElement = document.getElementById(inputId);
-    let quantity = parseInt(inputElement.value, 10) + change;
-
-
-
-    inputElement.value = quantity;
-
-    updateTotalPrice(inputId, quantity);
-}
-
-$('#addCartBtnBicolExpress').click(function () {
-    var itemName = "Bicol Express";
-    var price = 60.00;
-    var quantity = $('#quantityInputBicolExpress').val();
-
-    $.ajax({
-        type: 'POST',
-        url: 'order_cart.php',
-        data: {
-            addCartBtn: true,
-            item_name: itemName,
-            price: price,
-            quantity: quantity
-        },
-        success: function (response) {
-            // Check the response and redirect to menu.php
-            if (response === 'success') {
-                alert('Item added to cart successfully!');
-                window.location.href = 'menu.php';
-            } else {
-                alert('Failed to add item to cart. Please try again.');
-            }
-        },
-        error: function () {
-            alert('An error occurred. Please try again.');
-        }
+    $('#addCartBtn').click(function () {
+      var quantity = $('#quantityInput').val();
+      $('#quantity').modal('hide');
     });
-});
-
-function updateQuantity(inputId, change) {
-    const inputElement = document.getElementById(inputId);
-    let quantity = parseInt(inputElement.value, 10) + change;
-
-    inputElement.value = quantity;
-
-    updateTotalPrice(inputId, quantity);
+  });
+function updateQuantity(inputId, increment) {
+    var inputElement = document.getElementById(inputId);
+    var currentValue = parseInt(inputElement.value);
+    var newValue = currentValue + increment;
+    newValue = Math.max(newValue, 1);
+    inputElement.value = newValue;
 }
-
-
-

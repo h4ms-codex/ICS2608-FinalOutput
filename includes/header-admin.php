@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar main-navbar navbar-expand-lg">
         <div class="container d-flex justify-content-center">
             <img class="logo" src="../images/Liempohan_Logo.png" alt="">
         </div>
